@@ -1,0 +1,20 @@
+-- create database
+CREATE DATABASE BASIC;
+-- use the database
+USE BASIC;
+-- create table in database
+CREATE TABLE STUDENT(
+  ID INT PRIMARY KEY,SNAME VARCHAR(30),
+   CGPA DECIMAL(3,2)
+);
+-- display the table value
+DESCRIBE STUDENT;
+-- alter the database
+ALTER TABLE STUDENT ADD DEPARTMENT VARCHAR(10);
+-- insert multiple values
+INSERT INTO STUDENT VALUES(1,"Aarthi",9.2),(2,"Anitha",8.8),(3,"Anitha",8.0),(4,"Arul",9.4),
+                           (5,"Balaji",7.8),(6,"Keerthika",8.0);
+-- INSERT INTO STUDENT VALUES (ONE BY ONE)
+-- select the value in the database and display them
+SELECT * FROM STUDENT;
+-- SELECT ID,CGPA FROM STUDENT;
